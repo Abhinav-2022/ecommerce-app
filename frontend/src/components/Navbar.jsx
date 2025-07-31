@@ -39,7 +39,7 @@ function Navbar() {
 
         </div>
         <div className='group relative'>
-          <img className='w-5 cursor-pointer'src={assets.profile_icon} alt="" />
+          <img className='w-5 cursor-pointer'src={assets.prof  ile_icon} alt="" />
 
         </div>
 
