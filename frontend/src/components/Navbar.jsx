@@ -3,7 +3,7 @@ import { assets } from '../assets/assets/frontend_assets/assets';
 import { Link, NavLink } from 'react-router-dom';
 
 function Navbar() {
-  const   [visible, setVisible] = useState(false);
+  const   [visible,setVisible] = useState(false);
   return ( 
     <div className='flex items-center justify-between py-5 font-medium'>
       <img src={assets.logo} className='w-36' alt="Logo" />
@@ -61,10 +61,10 @@ function Navbar() {
                   <p>Back</p>
             </div>
 
-              <Navlink className to={'/'}>HOME</Navlink>
-              <Navlink to={'/collection'}>COLLECTION</Navlink>
-              <Navlink to={'/about'}>ABOUT</Navlink>
-              <Navlink to={'/contact'}>CONTACT</Navlink>
+              <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to={'/'}>HOME</NavLink>
+              <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to={'/collection'}>COLLECTION</NavLink>
+              <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to={'/about'}>ABOUT</NavLink>
+              <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to={'/contact'}>CONTACT</NavLink>
 
 
 
