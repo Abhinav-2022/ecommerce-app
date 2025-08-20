@@ -16,6 +16,7 @@ export const assets = {
     parcel_icon,
     search_icon,
     profile_icon,
-    menu_icon
+    menu_icon,
+    hero_img
 }
 
