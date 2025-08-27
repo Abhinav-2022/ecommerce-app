@@ -6,7 +6,7 @@ function Navbar() {
   const   [visible,setVisible] = useState(false);
   return ( 
     <div className='flex items-center justify-between py-5 font-medium'>
-      <img src={assets.logo} className='w-36' alt="Logo" />
+      <img src={assets.logo} className='w-36' alt="Shop logo" />
       
       <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
         <li>
@@ -36,13 +36,13 @@ function Navbar() {
       </ul>
 
       <div className='flex items-center gap-6'>
-        <img src={assets.search_icon} className='w-5 cursor-pointer' alt="Search Icon" />
+        <img src={assets.search_icon} className='w-5 cursor-pointer' alt="Search" />
               
            <div className='group relative'> 
-          <img src={assets.profile_icon} className='w-5 cursor-pointer' alt="Profile Icon" />
+          <img src={assets.profile_icon} className='w-5 cursor-pointer' alt="Profile" />
           <div className='absolute right-0 mt-2 hidden group-hover:block bg-white shadow-md p-2 rounded'>
             <p className='cursor-pointer hover:text-black'>My Profile</p>
-            <p className='cursor-pointer hover:text-black'>Orders</p>
+            <Link to='/orders' className='cursor-pointer hover:text-black'>Orders</Link>
             <p className='cursor-pointer hover:text-black'>Logout</p>
           </div>
         </div>
@@ -51,7 +51,7 @@ function Navbar() {
         <img src={assets.cart_icon} className='w-5 min-w-5' alt="" />
          <p className='absolute right-[-5px]  bottom-[-8px]  w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'>10</p>
         </Link>
-        <img onClick={()=>setVisible(true)} src={assets.menu_icon} className='w-5 cursor-pointer sm:hidden' alt="" />
+        <img onClick={()=>setVisible(true)} src={assets.menu_icon} className='w-5 cursor-pointer sm:hidden' alt="Menu" />
       </div>
       {/*Sidebar menu for small screen */}
         <div className={`absolute right-0 top-0 bottom-0 overflow-hidden bg-white transition-all ${visible?'w-full':'w-0'}`}>

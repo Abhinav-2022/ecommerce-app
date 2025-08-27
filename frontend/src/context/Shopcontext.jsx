@@ -14,10 +14,11 @@ const ShopcontextProvider = (props) =>{
  }
  return(
     <Shopcontext.Provider value={value}>
-        {props.childern}
+        {props.children}
 
 
     </Shopcontext.Provider>
  )
           
 }
+export default ShopcontextProvider
